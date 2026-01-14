@@ -13,12 +13,6 @@ function LandAbout() {
         "Students can register, explore job opportunities, apply for jobs, and track application status with a personalized dashboard.",
     },
     {
-      title: "TPO (Training & Placement Officer)",
-      image: TPO,
-      description:
-        "TPOs manage company data, job postings, application reviews, and generate insightful reports for placement tracking.",
-    },
-    {
       title: "Management",
       image: Management,
       description:
@@ -40,7 +34,7 @@ function LandAbout() {
       <div className="text-center mb-12">
         <h2 className="text-4xl md:text-5xl font-bold mb-3 playfair">About CPMS</h2>
         <p className="text-md md:text-lg max-w-3xl mx-auto text-gray-700 px-3">
-          Developed by final year students of Rizvi College of Engineering, CPMS (College Placement Management System) is a powerful web-based platform to streamline and manage campus placements efficiently.
+          College Placement Management System (CPMS) is a web-based platform that simplifies and manages campus placements efficiently. It helps students explore opportunities, track applications, and stay connected with the placement office. CPMS enables smooth communication and coordination between students, TPOs, and recruiters in one place.
         </p>
       </div>
 
