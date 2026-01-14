@@ -50,11 +50,11 @@ function LandingNavbar() {
           className="flex items-center max-md:gap-2 md:gap-4 cursor-pointer transition-transform hover:scale-105 duration-150"
           onClick={() => navigate('/')}
         >
-          <img
+          {/* <img
             src={Logo}
             alt="CPMS Logo"
             className="rounded-xl border border-gray-300 w-16 h-16 md:w-20 md:h-20 shadow-sm"
-          />
+          /> */}
           <h1 className={`text-2xl md:text-4xl font-extrabold bg-gradient-to-r from-indigo-600 to-emerald-500 bg-clip-text text-transparent`}>
             {logoText}
           </h1>
