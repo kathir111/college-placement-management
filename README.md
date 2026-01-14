@@ -135,9 +135,3 @@ cd college-placement-management-system
    npm run dev
    ```
 
-## Contributors
-- **Member 1**: [Moin MN](https://www.linkedin.com/in/moinnaik/)
-- **Member 2**: Rafat Muskan Shaikh
-- **Member 3**: Saquib Patel
-- **Member 4**: Neeraj Kumar
-
