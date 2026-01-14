@@ -9,7 +9,7 @@ function LoadingComponent() {
         {/* <video width="350" height="350" autoPlay loop muted >
           <source src={LogoVid} type="video/mp4" />
         </video> */}
-        <img src={LogoImg} alt="CPMS Logo" width="350" height="350" />
+        {/* <img src={LogoImg} alt="CPMS Logo" width="350" height="350" /> */}
         <div className="flex items-center gap-2 mx-2">
           <div className="w-8 h-8 border-4 border-[#13325b] border-t-transparent border-solid rounded-full animate-spin"></div>
           <div className="">
