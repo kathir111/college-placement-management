@@ -22,7 +22,6 @@ function LandingHeroPage() {
     <section
       id="home"
       className="relative h-[90vh] w-full flex items-center justify-center bg-cover bg-center bg-no-repeat"
-      style={{ backgroundImage: `url(${HeroImg})` }}
     >
       {/* Dark glass overlay */}
       <div className="absolute inset-0 bg-black/40 bg-opacity-20 backdrop-blur-sm" />
@@ -30,8 +29,8 @@ function LandingHeroPage() {
       {/* Content */}
       <div className="relative z-20 max-w-5xl text-center">
         <h1 className="text-white text-5xl sm:text-6xl md:text-7xl font-extrabold leading-tight drop-shadow-md">
-          Empower Your Career with <br />
-          <span className="bg-gradient-to-r from-green-300 via-blue-500 to-purple-600 text-transparent bg-clip-text">
+          Shape Your Future with the <br />
+          <span className="bg-gradient-to-r from-blue-300 via-purple-500 to-red-600 text-transparent bg-clip-text">
             CPMS Portal
           </span>
         </h1>
