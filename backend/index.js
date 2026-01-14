@@ -18,6 +18,9 @@ mongodb();
 
 
 // routes for user
+app.get("/api/test", (req, res) => {
+  res.json({ message: "Backend working" });
+});
 app.use('/user', require('./routes/user.route'));
 // routes for student user
 app.use('/student', require('./routes/student.route'));
