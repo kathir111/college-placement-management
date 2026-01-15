@@ -10,6 +10,7 @@ app.use(cors({
 }));
 
 // public folder for users profile
+app.use("/dev", require("./routes/dev.route"));
 app.use('/profileImgs', express.static(path.join(__dirname, 'public/profileImgs')));
 app.use('/resume', express.static(path.join(__dirname, 'public/resumes')));
 app.use('/offerLetter', express.static(path.join(__dirname, 'public/offerLetter')));
