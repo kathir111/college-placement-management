@@ -7,7 +7,7 @@ const authenticateToken = require('../middleware/auth.middleware');
 
 const Login = require('../controllers/SuperUser/login.controller.js');
 
-const bcrypt = require("bcrypt");
+const bcrypt = require("bcryptjs");
 const User = require("../models/user.model");
 
 // TEMPORARY: create superuser
