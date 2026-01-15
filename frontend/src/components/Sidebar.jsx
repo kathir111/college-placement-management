@@ -92,7 +92,7 @@ const Sidebar = ({ isSidebarVisible }) => {
       <nav className={`bg-[#f2f2f2] w-[240px] min-h-screen h-full z-20 flex flex-col fixed top-0 transition-transform duration-300 ${sidebar ? 'translate-x-0' : '-translate-x-full'} shadow-md navbar-container lg:w-[260px]`}>
         {/* Main Sidebar Logo and Name */}
         <div className="flex items-center px-4 py-6 gap-3 bg-blue-50">
-          <img className="rounded-xl shadow-md" src={Logo} alt="Logo Image" width="75" height="75" />
+          {/* <img className="rounded-xl shadow-md" src={Logo} alt="Logo Image" width="75" height="75" /> */}
           <h1 className="text-2xl font-bold text-white">
             {loadData.role === 'superuser' && <Link to="/admin/dashboard" className="no-underline text-black">CPMS</Link>}
             {loadData.role === 'management_admin' && <Link to="/management/dashboard" className="no-underline text-black">CPMS</Link>}
