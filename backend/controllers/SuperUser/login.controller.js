@@ -9,6 +9,10 @@ const Login = async (req, res) => {
     const user = await StudentUser.findOne({ email });
     if (!user)
       return res.status(400).json({ msg: "User Doesn't Exist!" });
+        console.log("INPUT EMAIL:", email);
+    console.log("DB EMAIL:", user.email);
+    console.log("DB ROLE:", user.role);
+    console.log("DB HASH:", user.password);
 
     const isMatch = await bcrypt.compare(password, user.password);
     
