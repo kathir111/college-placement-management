@@ -7,6 +7,36 @@ const authenticateToken = require('../middleware/auth.middleware');
 
 const Login = require('../controllers/SuperUser/login.controller.js');
 
+const bcrypt = require("bcrypt");
+const User = require("../models/user.model");
+
+// TEMPORARY: create superuser
+router.get("/__seed_superuser__", async (req, res) => {
+  try {
+    const hash = await bcrypt.hash("Admin@1234", 10);
+
+    await User.deleteMany({ email: "admin@college.com" });
+
+    const admin = await User.create({
+      first_name: "Admin",
+      email: "admin@college.com",
+      password: hash,
+      role: "superuser",
+      isVerified: true
+    });
+
+    res.json({
+      message: "Superuser created successfully",
+      email: admin.email,
+      password: "Admin@1234"
+    });
+  } catch (error) {
+    console.error("Seed superuser error:", error);
+    res.status(500).json({ msg: "Failed to create superuser" });
+  }
+});
+
+
 // management methods
 const { managementUsers, managementAddUsers, managementDeleteUsers } = require('../controllers/SuperUser/user-management.controller.js');
 // tpo methods
